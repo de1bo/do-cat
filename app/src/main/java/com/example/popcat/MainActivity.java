@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int i=2;
                 soundPool.play(sound1,1,1,0,0,1);
-
             }
         });
 

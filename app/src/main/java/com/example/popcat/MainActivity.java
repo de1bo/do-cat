@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences SharePref = getSharedPreferences("SharePref", MODE_PRIVATE);
         count =  SharePref.getInt("count", 0);
 
-
         /*sound 부분*/
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             AudioAttributes audioAttributes = new AudioAttributes.Builder()

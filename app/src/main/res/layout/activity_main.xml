@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <View
         android:layout_width="match_parent"
@@ -71,26 +76,31 @@
         android:orientation="horizontal">
 
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_sound"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_margin="25dp"
             android:background="@drawable/radius"
             android:layout_weight="1"
-            android:text="CHANGE SOUND" />
+            android:src="@drawable/catnip"
+            android:scaleType="centerCrop"
+            android:text="캣닢 주기" />
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_fever"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_margin="25dp"
             android:layout_weight="1"
             android:background="@drawable/radius"
+            android:src="@drawable/sleep"
+            android:scaleType="centerCrop"
             android:text="FEVER
-            15SEC" />
+            10SEC" />
 
+    </LinearLayout>
     </LinearLayout>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

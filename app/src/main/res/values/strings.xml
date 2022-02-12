@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Popcat</string>
+    <string name="app_name">흰털 키우기</string>
 
     <string name="pop_normal">참치~!</string>
     <string name="Pop_pop">츄르~!!</string>
     <string name="Pop_FEVER">캣닢!!!</string>
+    <string name="Pop_sleep">자는중..zzzz</string>
+    <string name="Pop_walk">산책냥이~</string>
 
 
     <string-array
@@ -12,6 +14,16 @@
         <item>@string/pop_normal</item>
         <item>@string/Pop_pop</item>
         <item>@string/Pop_FEVER</item>
+    </string-array>
+
+    <string-array
+        name="sleep">
+        <item>@string/Pop_sleep</item>
+    </string-array>
+
+    <string-array
+        name="walk">
+        <item>@string/Pop_walk</item>
     </string-array>
 
 </resources>

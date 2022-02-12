@@ -56,7 +56,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="도캣"
+        android:text="흰캣"
         android:textColor="#ff0000"
         android:textSize="34dp"
         app:layout_constraintEnd_toEndOf="parent"

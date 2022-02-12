@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 }.start();
 
                 int i=2;
-                count +=200;
+                count +=100;
                 tv_text.setText(list[i]);
                 tv_count.setText(String.valueOf(count)); //카운트됨
                 imagecat.setImageResource(images[i]);  //이미지 출력
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     imagecat.setEnabled(true); //버튼 활성화
                     btn_fever.setEnabled(true); //버튼 활성화
                 }
-            }, 16000);
+            }, 11000);
             }
         });
 

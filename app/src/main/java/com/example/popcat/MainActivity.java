@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Build;
 import android.os.Bundle;
@@ -74,8 +75,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             soundPool = new SoundPool(6, AudioManager.STREAM_MUSIC, 0);
         }
-        sound1 = soundPool.load(this,R.raw.sound1,1);
-        sound2 = soundPool.load(this,R.raw.sound2,1);
+        MediaPlayer player = MediaPlayer.create(this, R.raw.sound1);
         /*sound 끝*/
 
         String[] list = getResources().getStringArray(R.array.list);
@@ -92,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
         imagecat.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                soundPool.play(sound1,1,1,0,0,1); //sound 실행 구문
+
+                player.start();
 
                 count++; //숫자 카운트
                 i++;    //img list, text
@@ -206,7 +207,9 @@ public class MainActivity extends AppCompatActivity {
     // 캣닢주는 공장
     public void catnip() {
         i= 2;
-        soundPool.play(sound2,1,1,0,0,1);
+        MediaPlayer player = MediaPlayer.create(this, R.raw.sound2);
+        player.start();
+       // soundPool.play(sound2,1,1,0,0,1);
         factory();
         if (i == 2)
             i = -1;

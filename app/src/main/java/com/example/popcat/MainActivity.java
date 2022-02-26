@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    // 출력 공장
+    // 출력 
     public void factory(){
         String[] list = getResources().getStringArray(R.array.list);
         tv_text.setText(list[i]);
@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
         imagecat.setImageResource(images[i]);  // 이미지 출력
     }
 
-    // 캣닢주는 공장
+    // 캣닢주는 함수
     public void catnip() {
         i= 2;
         soundPool.play(sound2,1,1,0,0,1);
